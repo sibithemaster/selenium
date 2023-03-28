@@ -1,0 +1,101 @@
+Beginner Level Selenium Interview Questions
+1. What are the Selenium suite components?
+Selenium IDE
+
+It is a Firefox/Chrome plug-in that was developed to 
+speed up the creation of automation scripts. 
+
+It records the user actions on the web browser 
+and exports them as a reusable script.
+
+Selenium Remote Control (RC)
+
+RC is a server that allows users to 
+write application tests in various programming languages. 
+The commands from the test script are accepted 
+by this server and are sent to the browser 
+as Selenium core JavaScript commands. 
+The browser then behaves accordingly.
+
+Selenium WebDriver
+
+WebDriver is a programming interface that helps create 
+and run test cases. It makes provision to act on web elements. 
+Unlike RC, WebDriver does not require an additional server 
+and interacts natively with the browser applications.
+
+Selenium Grid
+
+The grid was designed to distribute commands to different machines simultaneously. 
+It allows the parallel execution of tests on different browsers and 
+different operating systems. 
+It is exceptionally flexible and is integrated with other 
+suite components for simultaneous execution.
+
+2. What are the limitations of Selenium testing? 
+Unavailability of reliable tech support: Since Selenium is an open-source tool, it does not have dedicated tech support to resolve the user queries. 
+Tests web applications only: Selenium needs to be integrated with third-party tools like Appium and TestNG to test desktop and mobile applications.
+Limited support for image testing.
+No built-in reporting and test management facility: Selenium has to be integrated with tools like TestNG, or JUnit among others to facilitate test reporting and management.
+May require the knowledge of programming languages: Selenium WebDriver expects the user to have some basic knowledge about programming. 
+3. What are the testing types supported by Selenium? 
+Selenium supports Regression testing and Functional testing. 
+
+Regression testing - It is a full or partial selection of 
+already executed test cases that are re-executed to ensure 
+existing functionalities work fine.
+
+The steps involved are - 
+
+Re-testing: All tests in the existing test suite are executed. It proves to be very expensive and time-consuming.
+Regression test selection: Tests are classified as feature tests, integration tests,  and the end to end tests. In this step, some of the tests are selected.
+Prioritization of test cases: The selected test cases are prioritized based on business impact and critical functionalities.
+Functional testing - Functional Testing involves the verification of every function of the application with the required specification. 
+
+The following are the steps involved:
+
+Identify test input
+Compute test outcome
+Execute test
+Compare the test outcome with the actual outcome 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Enna pannaum nu kelunga after
+creating a project 
+and normal setup in maven
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
