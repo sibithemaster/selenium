@@ -12,12 +12,14 @@ public class DayNineMoveToElementAction {
 
 	public static void main(String[] args) throws InterruptedException  {
 		System.setProperty("webdriver.chrome.driver",
-				"E:\\workspace\\Selenium\\ex\\chromedriver.exe");		
+				"E:\\workspace\\Selenium\\dr\\chromedriver.exe");		
 		
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.amazon.in");
 		driver.manage().window().maximize();
+		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
 		WebElement element=driver.findElement(By.id("icp-nav-flyout"));//icp-nav-flyout
 		
 		Actions actionObj = new Actions(driver);

@@ -16,9 +16,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 public class ScreenShots {
 
 	public static void main(String[] args) throws IOException {
-		DateTimeFormatter date=DateTimeFormatter.ofPattern("yyyy/mm/dd-HH:MM:SS");
-		LocalDateTime now = LocalDateTime.now() ;
-		System.out.println(date.format(now));
+
 		
 		System.setProperty("webdriver.edge.driver",
 				"E:\\workspace\\Selenium\\msedge\\msedgedriver.exe");	
@@ -27,8 +25,6 @@ public class ScreenShots {
 		WebDriver driver = new EdgeDriver();
 		
 		driver.manage().window().maximize();
-		
-	//	driver.manage().deleteAllCookies();
 		
 		driver.get("https://www.bing.com/search?q=weather+report&form=ANNTH1&refig=cc2e8c33b2834b32af7f9b3e8a4731b5");
 		
@@ -39,16 +35,13 @@ public class ScreenShots {
 		System.out.println("Screenshot-->"+ src);
 		//
 		String myLocation = "./screen/screenshot"+".png";
-        myLocation = "E:\\workspace\\Selenium\\screen\\screenshot"+timestamp()+".png";
+        myLocation = "E:\\workspace\\Selenium\\screen\\screenshot.png";
 		File destFile = new File(myLocation);
 		FileUtils.copyFile(src, destFile);
 //		driver.close();
 
 	}
 
-	private static String timestamp() {
-		return new SimpleDateFormat("yyyyMMdd HHmmss").format(new Date());
-	}
-
+	
 
 }

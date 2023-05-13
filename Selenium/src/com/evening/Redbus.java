@@ -1,6 +1,5 @@
 package com.evening;
 
-import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -9,11 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Redbus {
-
 	public static void main(String[] args) throws Exception {
 		//setting the drivers
 				System.setProperty("webdriver.chrome.driver",
-						"E:\\workspace\\Selenium\\ex\\chromedriver.exe");	
+						"E:\\workspace\\Selenium\\dr\\chromedriver.exe");	
 			//	System.setProperty("webdriver.chrome.driver", 
 			//	"C:\\Workspace\\chromedriver_win32\\chromedriver.exe");
 				WebDriver driver=new ChromeDriver();
@@ -36,5 +34,4 @@ public class Redbus {
 
 			//	driver.findElement(By.xpath("/html/body/div/div/div[2]/span[1]")).click();
 	}
-
 }

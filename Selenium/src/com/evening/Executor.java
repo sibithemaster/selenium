@@ -12,26 +12,18 @@ public class Executor {
 		// TODO Auto-generated method stub
 
 		System.setProperty("webdriver.chrome.driver", 
-				"E:\\workspace\\Selenium\\ex\\chromedriver.exe");
-		
+				"E:\\workspace\\Selenium\\dr\\chromedriver.exe");		
 		WebDriver driver=new ChromeDriver();
-
 		driver.manage().window().maximize();
-		
 //		driver.get("https://www.facebook.com");
 		driver.get("https://www.amazon.in/");
-
 		JavascriptExecutor js =  (JavascriptExecutor) driver;
-		
 		//vertical
-//		js.executeScript("window.scrollBy(0,1000)");
-		
-//		js.executeScript("window.scrollBy(0,-500)");
-		
+		js.executeScript("window.scrollBy(0,2000)");
+//		js.executeScript("window.scrollBy(0,-1000)");
 //		driver.navigate().to("https://www.album.alexflueras.ro/");
-		
 		//horizontal
-//    	js.executeScript("window.scrollBy(1000,0)");
+ //   	js.executeScript("window.scrollBy(1000,0)");
 		
 //		WebElement mobile = driver.findElement(By.xpath("//a[@data-csa-c-slot-id='nav_cs_2']"));
 

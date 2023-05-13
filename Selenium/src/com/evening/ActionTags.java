@@ -14,32 +14,22 @@ public class ActionTags {
 		// setting up the driver
 		System.setProperty("webdriver.chrome.driver", 
 				"E:\\workspace\\Selenium\\dr\\chromedriver.exe");
-
 		// creating object for the driver
 		WebDriver driver = new ChromeDriver();
-
 //		driver.get("http://demo.guru99.com/test/drag_drop.html");
-
 		//maximize the window
 		driver.manage().window().maximize();
-
-
-				Actions a = new Actions(driver);
-
+		Actions a = new Actions(driver);
 //		WebElement From=driver.findElement(By.xpath("//a[text()=' BANK ']"));
-
 		//(//li[@class='placeholder'])[1]
 //		WebElement To=driver.findElement(By.xpath("(//li[@class='placeholder'])[1]"));
-
 //		a.dragAndDrop(From, To).build().perform();
-		
         driver.get("https://www.amazon.in/");		
-        
-        WebElement w = driver.findElement(By.xpath("//a[text()='Mobiles']"));
-        
-       // WebElement q= driver.findElement(By.xpath("(//a[text()='Mobiles'])[1]"));
-        a.doubleClick(w).build().perform();   
-        
+//        WebElement w = driver.findElement(By.xpath("//a[@href='/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles']"));
+        WebElement q= driver.findElement(By.xpath("(//a[text()='Mobiles'])[1]"));
+       // a.contextClick().build().perform(); 
+     //  a.doubleClick(q).perform(); 
+       a.clickAndHold(q).build().perform();
 	}
 
 }

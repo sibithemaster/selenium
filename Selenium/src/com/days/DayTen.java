@@ -11,13 +11,10 @@ public class DayTen {
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",
 				"E:\\workspace\\Selenium\\dr\\chromedriver.exe");		
-
-        WebDriver driver=new ChromeDriver();
-       
+        WebDriver driver=new ChromeDriver();    
         driver.manage().window().maximize();
 		driver.get("http://www.facebook.com");
 		driver.manage().window().maximize(); 
-	
 		
 		// Type casting , We are adding JS methods to webdriver.
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -34,13 +31,13 @@ public class DayTen {
 		js.executeScript("arguments[0].setAttribute('value','abc@123')", passWord);
 		
 		WebElement login=driver.findElement(By.name("login"));
-//		js.executeScript("arguments[0].click()", login);
+	//	js.executeScript("arguments[0].click()", login);
 		
 		
 		js.executeScript("arguments[0].scrollIntoView(true)",login);//top to bottom
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView(false)",login);//bottom to top
-		js.executeScript("arguments[0].click()", login); 
+//		js.executeScript("arguments[0].click()", login); 
 	}
 
 }

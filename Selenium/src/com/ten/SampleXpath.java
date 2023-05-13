@@ -8,45 +8,32 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SampleXpath {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
 		System.setProperty("webdriver.chrome.driver", 
 				"E:\\workspace\\Selenium\\dr\\chromedriver.exe");
 		
-		WebDriver driver = new ChromeDriver();
-		
+		WebDriver driver = new ChromeDriver();	
 		driver.get("https://demo.automationtesting.in/Alerts.html");
-		
-	//	driver.findElement(By.xpath("//button[@onclick='alertbox()']")).click();
-		
+//		driver.findElement(By.xpath("//button[@onclick='alertbox()']")).click();
 		//simple 
-	//	Alert alerts=driver.switchTo().alert();
-		
-	//	System.out.println(alerts.getText());
-		
-	//	alerts.dismiss();
-		
-		//confirm
-		
-//		driver.findElement(By.xpath("//a[text()='Alert with OK & Cancel ']")).click();
-//		
-//		driver.findElement(By.xpath("//button[@onclick='confirmbox()']")).click();
-//		
 //		Alert alerts=driver.switchTo().alert();
-//		
+//		Thread.sleep(3000);
 //		System.out.println(alerts.getText());
-//		
-//		alerts.accept();
-		
-		
+//		alerts.dismiss();
+		//confirm
+//		driver.findElement(By.xpath("//a[text()='Alert with OK & Cancel ']")).click();
+//		driver.findElement(By.xpath("//button[@onclick='confirmbox()']")).click();
+//		Alert alerts=driver.switchTo().alert();
+//		System.out.println(alerts.getText());
+//		Thread.sleep(3000);
+//		alerts.dismiss();
 		// prompt
-		
 		driver.findElement(By.xpath("//a[text()='Alert with Textbox ']")).click();
 		driver.findElement(By.xpath("//button[text()='click the button to demonstrate the prompt box ']")).click();
-		
 		Alert alerts = driver.switchTo().alert();
-		
-		alerts.sendKeys("Deena");
+		System.out.println(alerts.getText());
+	    alerts.sendKeys("Deena");
         alerts.accept();		
 		
 		

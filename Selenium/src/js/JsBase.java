@@ -19,7 +19,7 @@ public class JsBase
     }
 
 	public static void changeBackgroundColor(String color, WebElement element, WebDriver driver) {		
-		JavascriptExecutor js =( (JavascriptExecutor) driver);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].style.backgroundColor = '"+color+" '",element);
 		
 		try {

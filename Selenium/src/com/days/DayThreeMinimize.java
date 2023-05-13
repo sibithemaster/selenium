@@ -17,17 +17,19 @@ public class DayThreeMinimize {
 	public static void main(String[] args) throws Exception {
 		//setting the drivers
 		System.setProperty("webdriver.chrome.driver",
-				"E:\\workspace\\Selenium\\ex\\chromedriver.exe");		
+				"E:\\workspace\\Selenium\\dr\\chromedriver.exe");		
+		
 		//casting driver
 		ChromeDriver driver=new ChromeDriver();
+		
 		//getting the window size
 		driver.manage().window().maximize();		
 		driver.get("https://www.facebook.com/");		
-//		Thread.sleep(2000);
-//     	Dimension d = new Dimension(500, 500);
-//		driver.manage().window().setSize(d);
 		Thread.sleep(2000);
-		Point p = new Point(-100, -10);
+     	Dimension d = new Dimension(1000, 500);
+		driver.manage().window().setSize(d);
+		Thread.sleep(2000);
+		Point p = new Point(100, -10);
 		driver.manage().window().setPosition(p);		
 		
 //        WebElement user = driver.findElement(By.id("email"));
