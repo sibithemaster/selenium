@@ -6,7 +6,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Webtable1 {
 
@@ -56,11 +55,11 @@ public class Webtable1 {
 		System.out.println(row);
 		//to get data in that table
 		List<WebElement> td=row.findElements(By.tagName("td"));
-		//for(int k=0;k<td.size();k++) {
-			WebElement data=td.get(2);
+		for(int k=0;k<td.size();k++) {
+			WebElement data=td.get(0);
 			String text1=data.getText();
 			System.out.println(text1);
-		//}
+		}
 		System.out.println(" ");
 
 		}

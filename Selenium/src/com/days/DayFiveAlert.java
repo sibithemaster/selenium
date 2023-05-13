@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class DayFiveAlert 
 {
 
-	public static void main(String[] args) throws Exception 
+	public static void main(String[] args) throws InterruptedException 
 	{		
 		System.setProperty("webdriver.chrome.driver",
 				"E:\\workspace\\Selenium\\dr\\chromedriver.exe");			

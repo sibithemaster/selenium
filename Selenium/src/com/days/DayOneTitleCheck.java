@@ -7,7 +7,7 @@ public class DayOneTitleCheck {
 	public static void main(String[] args) {		
 		//setting the drivers
 		System.setProperty("webdriver.chrome.driver",
-				"E:\\workspace\\Selenium\\ex\\chromedriver.exe");	
+				"E:\\workspace\\Selenium\\dr\\chromedriver.exe");	
 		//casting driver
 		WebDriver driver=new ChromeDriver();
 		//getting the window size
@@ -18,8 +18,9 @@ public class DayOneTitleCheck {
 		String titleOne=driver.getTitle();
 		//printing the title		
 		System.out.println(titleOne);		
-		driver.get("https://www.google.com/");
-		String titleTwo=driver.getTitle();
+//		driver.get("https://www.amazon.in/");
+//		String titleTwo=driver.getTitle();
+	    String titleTwo="https://www.googles.com/";
 		System.out.println(titleTwo);
 		
 		if(titleOne.equals(titleTwo)) {
